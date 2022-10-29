@@ -1,0 +1,30 @@
+namadatabase namamhs_nim (tanpa titik)
+tabel nama mhs_nim (tanpa titik)
+1.	membuat menu untuk menampilkan dan mengolah data dibawah ini
+2.	membuat user login menggunakan email
+3.	mengintegrasikan login kesemua file, bahwa semua file harus di 
+cek apakah sudah login atau belum, jika belum maka harus login dulu
+4.	membuat perintah untuk menghapus isi table (tiap table dihapus sendiri2)
+5.	upload data ke firebird ( mengambil dari excel t_matakuliahxxx) 
+data yang ada dalam table firebird tidak boleh ada yang sama, jika sama maka data 
+tidak dapat dimasukkan.
+6.	Buat table mahasiswaxxx, upload table tersebut ke firebird
+7.	Buat table KRSxxx di mysql dan Upload table KRS_xxx di database mysql
+8.	Buat table pembayarankrs, upload table pembayarankrs dengan mengecek jika 
+tidak ada dalam krs maka data tersebut disimpan dalam history_pembayarankrsxxx
+WHERE TAHUNAJARAN, KD_MSUJI, NIM
+9.	Buat table hasilstudi di mysql dan upload table t_hslstudi ke mysql dengan 
+ketentuan aturan (saat upload harus mengecek terlebih dahulu apakah ada krsnya atau tidak,
+ jika tidak ada maka data dimasukkan dalam table history_hslstudyxxx,  Nilai Angka diisi 
+ dengan ( 30%=uts, 30%uas, 40%tugas); A=>80;B>=70;C=>60;D=>50; selain itu E
+ WHERE NIM, TAHUNAJARAN, KD_MSUJI, KDMATAKULIAH
+10.	Buat laporan (nim, nama, bayar krs)
+11.	Buat laporan (nim,nama, nilai, matakuliah) hanya yang sudah membayar saja
+12.	Download hasil studi ke excel (nim, nama, matakuliah, sks, nilai angka, nilai huruf)
+13.	Perhatikan!!! Semua upload harus mengecek apakah sudah ada data atau belum jika sudah maka
+ data tidak boleh di input.
+ 
+ CREATE TABLE T_MATAKULIAH_16N10011 (KDMK_JUR varchar(10) not null primary key, MK varchar(225), SEMESTER char(2), MK_ENG varchar(225)
+
+SQL> CREATE TABLE T_MATAKULIAH_16N10011 (KDMK_JUR varchar(10) not null primary key, MK varchar(225), SEMESTER char(2), MK_ENG varchar(225));
+SQL> CREATE TABLE T_MAHASISWA_16N10011 (NIM varchar(10) not null primary key, ANGKATAN char(4), JURUSAN char(2), NAMA varchar(225) );
